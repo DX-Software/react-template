@@ -1,11 +1,10 @@
-name: test
+name: lint
 
 on: [pull_request]
 
 jobs:
   test:
     runs-on: ubuntu-latest
-    name: Unit Tests
     steps:
       - name: clone repo
         uses: actions/checkout@v2
