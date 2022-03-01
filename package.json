@@ -1,5 +1,5 @@
 {
-  "name": "react-web3-template",
+  "name": "react-template",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -37,11 +37,12 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "lint": "prettier --write **/*.json && eslint --cache --fix **/*{ts,tsx}"
   },
   "lint-staged": {
     "**/*.json": "prettier --write",
-    "**/*.{js,ts}": "eslint --cache --fix"
+    "**/*.{ts,tsx}": "eslint --cache --fix"
   },
   "eslintConfig": {
     "extends": [
