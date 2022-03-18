@@ -39,11 +39,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "prepare": "husky install",
-    "lint": "prettier --write **/*.{scss,css,json} && eslint --cache --fix \"**/*{ts,tsx}\""
-  },
-  "lint-staged": {
-    "**/*.{scss,css,json}": "prettier --write",
-    "**/*.{ts,tsx}": "eslint --cache --fix"
+    "lint": "prettier --write **/*.{scss,css,json,yml,md} && eslint --cache --fix \"**/*{js,jsx,ts,tsx}\""
   },
   "eslintConfig": {
     "extends": [
